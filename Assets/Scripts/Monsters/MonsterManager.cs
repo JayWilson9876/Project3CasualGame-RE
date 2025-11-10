@@ -53,4 +53,14 @@ public class MonsterManager : MonoBehaviour
         }
         Debug.LogWarning($"{monsterName} has no need called {needName}!");
     }
+
+    public float GetNeedValue(string needName)
+    {
+        foreach (MonsterNeed need in needs)
+        {
+            if (need.needName == needName)
+                return need.currentValue;
+        }
+        return 0f;
+    }
 }

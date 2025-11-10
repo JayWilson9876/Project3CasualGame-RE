@@ -1,68 +1,66 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class MonsterSpawner : MonoBehaviour
 {
     [Header("Monster Pool")]
     public MonsterData[] allMonsters; // assign all monster data here
-    public int monstersPerDay = 4;
 
     [Header("Spawn Points")]
     public Transform[] spawnPoints;
 
+    private List<GameObject> activeMonsters = new List<GameObject>();
+
     void Start()
     {
-        SpawnMonstersForDay();
+        GameManager.Instance.OnNewDayStarted.AddListener(OnNewDay);
     }
 
-    void SpawnMonstersForDay()
+    void OnNewDay(int day)
     {
-        if (allMonsters.Length == 0 || spawnPoints.Length == 0)
+        Debug.Log("MonsterSpawner heard OnNewDay: " + day);
+
+        int monstersToHave = day; // 1 monster on day 1, 2 on day 2, etc.
+        int monstersToAdd = monstersToHave - activeMonsters.Count;
+
+        for (int i = 0; i < monstersToAdd; i++)
         {
-            Debug.LogWarning("Missing monster data or spawn points!");
-            return;
+            SpawnNewMonster();
+        }
+    }
+
+    void SpawnNewMonster()
+    {
+        if (activeMonsters.Count >= allMonsters.Length) return;
+
+        // pick a random monster type not already active
+        List<MonsterData> available = new List<MonsterData>(allMonsters);
+        foreach (var m in activeMonsters)
+        {
+            MonsterManager n = m.GetComponent<MonsterManager>();
+            if (n != null)
+                available.RemoveAll(x => x.monsterName == n.monsterName);
         }
 
-        // Shuffle or pick random monsters
-        MonsterData[] chosenMonsters = PickRandomMonsters(monstersPerDay);
+        if (available.Count == 0) return;
 
-        for (int i = 0; i < chosenMonsters.Length; i++)
+        MonsterData randomMonster = available[Random.Range(0, available.Count)];
+        Transform spawn = spawnPoints[Random.Range(0, spawnPoints.Length)];
+
+        GameObject monsterObj = Instantiate(randomMonster.monsterPrefab, spawn.position, spawn.rotation);
+        activeMonsters.Add(monsterObj);
+
+        MonsterManager needs = monsterObj.GetComponent<MonsterManager>();
+        if (needs != null)
         {
-            MonsterData data = chosenMonsters[i];
-            Transform spawn = spawnPoints[i % spawnPoints.Length];
-
-            GameObject monsterObj = Instantiate(data.monsterPrefab, spawn.position, spawn.rotation);
-
-            // Configure needs dynamically
-            MonsterManager needs = monsterObj.GetComponent<MonsterManager>();
-            if (needs != null)
+            needs.monsterName = randomMonster.monsterName;
+            needs.needs = new MonsterNeed[]
             {
-                needs.monsterName = data.monsterName;
-                needs.needs = new MonsterNeed[]
-                {
-                    new MonsterNeed { needName = "Hunger", depletionRate = data.hungerRate },
-                    new MonsterNeed { needName = "Thirst", depletionRate = data.thirstRate },
-                    // new MonsterNeed { needName = "Fun", depletionRate = data.funRate },
-                    new MonsterNeed { needName = "Hygiene", depletionRate = data.hygieneRate }
-                };
-            }
-
-            // Optional: color or visuals
-            Renderer r = monsterObj.GetComponent<Renderer>();
-            if (r != null) r.material.color = data.monsterColor;
+                new MonsterNeed { needName = "Hunger", depletionRate = randomMonster.hungerRate },
+                new MonsterNeed { needName = "Thirst", depletionRate = randomMonster.thirstRate },
+                // new MonsterNeed { needName = "Fun", depletionRate = randomMonster.funRate },
+                new MonsterNeed { needName = "Hygiene", depletionRate = randomMonster.hygieneRate }
+            };
         }
-    }
-
-    MonsterData[] PickRandomMonsters(int count)
-    {
-        MonsterData[] result = new MonsterData[Mathf.Min(count, allMonsters.Length)];
-        System.Collections.Generic.List<MonsterData> pool = new System.Collections.Generic.List<MonsterData>(allMonsters);
-
-        for (int i = 0; i < result.Length; i++)
-        {
-            int index = Random.Range(0, pool.Count);
-            result[i] = pool[index];
-            pool.RemoveAt(index);
-        }
-        return result;
     }
 }

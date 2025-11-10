@@ -4,8 +4,8 @@ public class PlayerInteraction : MonoBehaviour
 {
     [Header("Pickup Settings")]
     public Transform cameraTransform;  // your main camera
-    public float pickupRange = 3f;
-    public float holdDistance = 2f;
+    public float pickupRange = 5f;
+    public float holdDistance = 3f;
     public LayerMask pickupLayer;
 
     private Rigidbody heldObject;
