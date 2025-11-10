@@ -355,7 +355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Day X
+  m_text: 'Day 1
 
 '
   m_isRightToLeft: 0
@@ -6559,6 +6559,8 @@ MonoBehaviour:
   needType: Thirst
   satisfyRate: 10
   range: 2
+  progressReward: 0.5
+  rewardCooldown: 2
 --- !u!65 &963795970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8268,6 +8270,8 @@ MonoBehaviour:
   needType: Hygiene
   satisfyRate: 10
   range: 2
+  progressReward: 0.5
+  rewardCooldown: 2
 --- !u!65 &1164554193
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9878,6 +9882,8 @@ MonoBehaviour:
   needType: Hunger
   satisfyRate: 10
   range: 2
+  progressReward: 0.5
+  rewardCooldown: 2
 --- !u!65 &1368489614
 BoxCollider:
   m_ObjectHideFlags: 0
