@@ -36,6 +36,21 @@ public class NeedStation : MonoBehaviour
                     GameManager.Instance.AddProgress(progressReward);
                     lastRewardTime = Time.time;
                     Debug.Log($"Gave progress +{progressReward} for helping {monster.monsterName}'s {needType}");
+
+                    switch (needType)
+                    {
+                        case "Thirst":
+                            SoundManager.instance.Play("DrinkingSFX");
+                            break;
+                        case "Hunger":
+                            SoundManager.instance.Play("EatingSFX");
+                            break;
+                        case "Hygiene":
+                            SoundManager.instance.Play("DingSFX");
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
         }

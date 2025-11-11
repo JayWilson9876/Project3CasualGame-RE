@@ -31,11 +31,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        SoundManager.instance.Play("MenuMusic");
+    }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Level1")
         {
             StartCoroutine(StartDayAfterSceneLoad());
+            SoundManager.instance.Stop("MenuMusic");
+            SoundManager.instance.Play("LevelMusic");
         }
     }
 
