@@ -355,6 +355,8 @@ GameObject:
   - component: {fileID: 4677503351644479648}
   - component: {fileID: 7433060969892345205}
   - component: {fileID: 9116220289993199517}
+  - component: {fileID: 3424175238254458698}
+  - component: {fileID: 417297277670188288}
   m_Layer: 6
   m_Name: Dragon_Monster
   m_TagString: Untagged
@@ -504,6 +506,43 @@ MonoBehaviour:
     currentValue: 100
     depletionRate: 0.1
   checkInterval: 1
+--- !u!114 &3424175238254458698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868371672196506164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8720ce0d5f5131144aebc6165358c834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderRadius: 5
+  wanderInterval: 3
+  idleTime: 1
+--- !u!195 &417297277670188288
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868371672196506164}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 4
+  avoidancePriority: 50
+  m_AngularSpeed: 360
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &2226730836241820181
 GameObject:
   m_ObjectHideFlags: 0

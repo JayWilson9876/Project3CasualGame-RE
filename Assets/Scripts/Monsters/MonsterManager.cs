@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MonsterManager : MonoBehaviour
 {
@@ -11,6 +13,16 @@ public class MonsterManager : MonoBehaviour
     [Header("Behavior")]
     public float checkInterval = 1f; // how often to update
     private float checkTimer;
+
+    [Header("Monster Components")]
+    private NavMeshAgent agent;
+    private Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        agent = GetComponent<NavMeshAgent>();
+    }
 
     void Update()
     {
@@ -63,4 +75,39 @@ public class MonsterManager : MonoBehaviour
         }
         return 0f;
     }
+
+    #region Pickup Monster
+    public void OnPickedUp()
+    {
+        if (agent != null)
+            agent.enabled = false;
+
+        if (rb != null)
+        {
+            rb.isKinematic = false;
+            rb.useGravity = false;
+        }
+    }
+
+    public void OnDropped()
+    {
+        if (rb != null)
+        {
+            rb.isKinematic = false;
+            rb.useGravity = true;
+        }
+
+        if (agent != null)
+        {
+            StartCoroutine(ReenableAgentNextFrame());
+        }
+    }
+
+    private IEnumerator ReenableAgentNextFrame()
+    {
+        yield return null;
+        agent.enabled = true;
+        agent.Warp(transform.position);
+    }
+    #endregion Pickup Monster
 }

@@ -493,6 +493,8 @@ GameObject:
   - component: {fileID: 2874862094210660502}
   - component: {fileID: 7753431550292189191}
   - component: {fileID: 7667449595189917915}
+  - component: {fileID: 7324856971883496998}
+  - component: {fileID: 6867925614013132762}
   m_Layer: 6
   m_Name: Mole_Monster
   m_TagString: Untagged
@@ -642,6 +644,43 @@ MonoBehaviour:
     currentValue: 100
     depletionRate: 1.75
   checkInterval: 1
+--- !u!114 &7324856971883496998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4302058186602742095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8720ce0d5f5131144aebc6165358c834, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderRadius: 5
+  wanderInterval: 3
+  idleTime: 1
+--- !u!195 &6867925614013132762
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4302058186602742095}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 4
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 0
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.6
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &5890887849984707334
 GameObject:
   m_ObjectHideFlags: 0
