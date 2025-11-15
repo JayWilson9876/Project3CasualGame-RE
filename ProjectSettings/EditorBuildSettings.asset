@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Camerons/Camerons Test.unity
+    guid: e73aac36572bf3a47819a9e187efe12f
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 1aa5bac690bd3f94484dd166af8373e3
   - enabled: 1
