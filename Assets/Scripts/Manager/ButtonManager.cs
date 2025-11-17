@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
+    public GameObject[] pages;
+
     // --- Scene Management ---
 
     public void LoadScene(string sceneName)
@@ -32,5 +34,11 @@ public class ButtonManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void ToNextPage(int nextPage)
+    {
+        for (int i = 0; i < pages.Length; i++)
+            pages[i].SetActive(i == nextPage);
     }
 }
