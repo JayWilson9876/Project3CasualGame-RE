@@ -329,7 +329,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hygiene
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -395,7 +395,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &159318645
@@ -814,7 +814,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Days
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &257148209
@@ -1604,7 +1604,7 @@ MonoBehaviour:
   m_text: 'Once by the toy box with the pet you want to play with, simply press ''F''
     to play a random game with them. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1670,7 +1670,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &543501375
@@ -1819,7 +1819,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fun
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1885,7 +1885,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &670547082
@@ -2036,7 +2036,7 @@ MonoBehaviour:
   m_text: Each monster has bars close to their heads that represent each of their
     needs!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2102,7 +2102,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &750362171
@@ -2855,7 +2855,7 @@ MonoBehaviour:
   m_text: There is no winning or losing when playing, only making sure the monsters
     have a fun time!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2921,7 +2921,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1032651609
@@ -2991,7 +2991,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hunger
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3057,7 +3057,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1076423368
@@ -3865,7 +3865,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Thirst
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3931,7 +3931,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1467002560
@@ -4182,7 +4182,7 @@ MonoBehaviour:
     new monster will be added to your daycare! The tracker at the top shows your
     current day and the progress to the next
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4248,7 +4248,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1675611253
@@ -4319,7 +4319,7 @@ MonoBehaviour:
   m_text: Progress is gained by meeting a pets needs but as each day passes, the
     more progress is needed for the next day!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4385,7 +4385,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1744223289
@@ -5112,7 +5112,7 @@ MonoBehaviour:
   m_text: Fun is a different kind of need from the rest. In order to play with a
     pet you must first carry them to the toy box.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5178,7 +5178,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1921209529
@@ -5823,7 +5823,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0384f484109e6c3498eb8709b7be9a42, type: 2}
   m_sharedMaterial: {fileID: 703801101603225119, guid: 30aa4278580094247b48452e8fc5d00c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5889,7 +5889,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2125208118
